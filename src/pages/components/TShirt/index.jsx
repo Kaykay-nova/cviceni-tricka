@@ -9,7 +9,7 @@ const tshirtTypes = {
   tallNoSleeve: 'M 25,90 V 35 c 5,-5 5,-20 0,-25 h 15 c 0,0 0,10 10,10 10,0 10,-10 10,-10 h 15 c -5,5 -5,20 0,25 v 55 z',
 };
 
-export const TShirt = ({ type, color, print }) => {
+export const TShirt = ({ type, color, print}) => {
   return (
     <div className="tshirt">
       <svg className="tshirt__outline" viewBox="0 0 100 100">
@@ -22,7 +22,7 @@ export const TShirt = ({ type, color, print }) => {
           d={tshirtTypes[type]}
         />
       </svg>
-      <div className="tshirt__print">{print}</div>
+      <div className="tshirt__print"> {print}</div>
     </div>
   );
 };
